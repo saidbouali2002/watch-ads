@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    height: 100vh;
+}
+
+.sidbar{
+    background-color: white;
+    height: 100vh;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0px 0px 0px 0px;
+    padding-top: 10px;
+}
+
+.sidbar .profile a{
+    gap: 26px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3E4B5B;
+    padding: 0px 24px;
+    padding-bottom: 13px;
+}
+
+.sidbar .profile a i{
+  font-size: 26px;
+    color: #3E4B5B;
+}
+
+.sidbar .profile a p{
+    font-size: 16px;
+      color: #3E4B5B;
+      font-weight: 500;
+  }
+
+ul{
+    
+    
+    margin-top: 10px;
+}
+
+
+
+.sidbar ul a{
+    margin: 3px 0px;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px 24px;
+    align-items: center;
+    gap: 26px;
+    transition: 0.3s all ease;
+}
+
+.sidbar ul a:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+.sidbar ul a i{
+    font-size: 26px;
+    color: #3E4B5B;
+}
+
+.sidbar ul a p{
+    font-size: 16px;
+    color: #3E4B5B;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .sidbar .profile a{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #3E4B5B;
+        padding: 0px 12px;
+        padding-bottom: 13px;
+    }
+    
+    .sidbar{
+        transition: 0.3s all ease;
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .sidbar:hover{
+        width: 200px;
+    }
+
+    
+    
+
+
+
+    .sidbar ul a{
+        margin: 3px 0px;
+        display: flex;
+        border-radius: 10px;
+        padding: 10px 8px;
+        align-items: center;
+        gap: 10px;
+        transition: 0.3s all ease;
+    }
+ }
+
+ .main{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+ }
+
+ .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(77, 77, 250);
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+ }
+
+
+ .header p{
+    color: white;
+    font-weight: 600;
+ }
+
+ .header i{
+    color: rgb(255, 253, 253);
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+
+ .statistics{
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 30px;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 30px;
+ }
+
+ .statistics .card{
+    height: 220px;
+    width: 110px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background: url(../assets/img/circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 8px;
+    align-items: center;
+    flex-grow: 1;
+    gap: 28px;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+
+ @media (max-width: 520px){
+    .statistics .card{
+        height: 115px;
+        width: 230px;
+        margin: 0;
+    }
+ }
+
+ .statistics .card h4{
+    font-weight: normal;
+    font-size: 50px;
+    
+ }
+
+ .statistics .card p{
+    
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+ }
+
+ .statistics .card i{
+    font-size: 40px;
+ }
+
+ .adDashboard{
+    
+    height: 50px;
+    background-color: white;
+    padding: 0px 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ .adDashboard p{
+    display: flex;
+    padding: 10px 00px;
+    
+    
+    
+ }
+
+ .goToadsPage{
+    margin-top: 100px;
+    margin-left: 20%;
+    padding-bottom: 50px;
+ }
+
+ .goToadsPage p{
+    font-size: 40px;
+    padding-bottom: 30px;
+ }
+
+ .goToadsPage a{
+    background-color: green;
+    color: white;
+    margin-top: 12px;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 30px;
+ }
